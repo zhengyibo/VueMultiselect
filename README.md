@@ -1,7 +1,7 @@
 # VueMultiselect
 基于Vue2.4.2 多选框组件
 
-#### 使用方法
+### 使用方法
 - 在开发环境引用
 ```
 // 引入组件
@@ -46,3 +46,5 @@ leftArray,rightArray 两个数组的结构为：
 其实可以用 nextTick() 函数方法写在组件内的mounted()内，进行改进。
 
 ```
+
+### 演示请参考demo (node-6.9.2以上)
