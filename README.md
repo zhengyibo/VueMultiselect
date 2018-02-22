@@ -47,4 +47,4 @@ leftArray,rightArray 两个数组的结构为：
 
 ```
 
-### 演示请参考demo (node-6.9.2以上)
+### 演示请参考demo (node-6.0.0以上)
