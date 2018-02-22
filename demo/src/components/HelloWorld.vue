@@ -2,7 +2,7 @@
   <div class="hello">
     <h1>{{ msg }}</h1>
     <div class="demo-container">
-      <multi-select :candidates="{left: }"></multi-select>
+      <multi-select :editAble="false" v-model="returnValue" :candidates="{left: lA, right: [] }"></multi-select>
     </div>
   </div>
 </template>
@@ -12,7 +12,15 @@ export default {
   name: 'HelloWorld',
   data () {
     return {
-      msg: '《关于多选操作-组件demo演示》'
+      msg: '《关于多选操作-组件demo演示》',
+      lA: [{
+        name: 'test',
+        id: 100
+      }, {
+        name: 'test2',
+        id: 101
+      }],
+      returnValue: null
     }
   }
 }
