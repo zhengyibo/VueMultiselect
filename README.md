@@ -15,7 +15,12 @@ Vue.use(MultiSelect)
 
 - 组件的参数介绍
 ```
-<multi-select :editAble="false" v-model="returnValue" :candidates="{left:leftArray, right:rightArray}" style="height: 14rem;"></multi-select>
+<multi-select
+  :editAble="false"
+  v-model="returnValue"
+  :candidates="{left:leftArray, right:rightArray}"
+  style="height: 14rem;">
+</multi-select>
 
 editAble         // 表示选中后的条目是否可以右键编辑 类型：Boolean
                  // 编辑的功能：可以给单个条目添加字符串
@@ -36,6 +41,8 @@ leftArray,rightArray 两个数组的结构为：
     id: '1001'
 }]               // 对象数组
 
-如果希望多选框中的备选项目是联动的，需要给组件外部添加渲染条件，保证multi-select组件可以在获得新的数据后更新。
+如果希望多选框中的备选项目是联动的，需要给组件外部添加渲染条件
+保证multi-select组件可以在获得新的数据后更新。
 其实可以用 nextTick() 函数方法写在组件内的mounted()内，进行改进。
+
 ```
