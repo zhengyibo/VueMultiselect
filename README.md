@@ -1,6 +1,10 @@
 # VueMultiselect
 基于Vue2.4.2 多选框组件
 
+### demo演示介绍
+![multiselect](src/vue-multiselect.PNG)
+- 组件内部flex布局，宽高自适应。
+
 ### 使用方法
 - 在开发环境引用
 ```
