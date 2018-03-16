@@ -1,8 +1,9 @@
 <template>
   <div class="hello">
     <h1>{{ msg }}</h1>
+    <h2><button @click="config">切换</button></h2>
     <div class="demo-container">
-      <multi-select :editAble="false" v-model="returnValue" :candidates="{left: lA, right: [] }"></multi-select>
+      <multi-select :editAble="false" v-model="returnValue" :candidates="candi"></multi-select>
     </div>
   </div>
 </template>
@@ -13,14 +14,25 @@ export default {
   data () {
     return {
       msg: '《关于多选操作-组件demo演示》',
-      lA: [{
-        name: 'test',
-        id: 100
+      candi: {left: [{
+        name: 'test1',
+        id: 101
       }, {
         name: 'test2',
-        id: 101
-      }],
+        id: 102
+      }], right: [] },
       returnValue: null
+    }
+  },
+  methods: {
+    config () {
+      this.candi.left = [{
+        name: 'nidaye',
+        id: 808
+      }, {
+        name: 'nidama',
+        id: 809
+      }]
     }
   }
 }
